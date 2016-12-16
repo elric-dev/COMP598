@@ -1,0 +1,154 @@
+                                        Sankoff Analysis for RF02045 Family
+----------------------------------------------------------------------------------------------------
+                    RF02045 Family Tree
+----------------------------------------------------------------------------------------------------
+  ____ AANN01722443.1/605-459
+ |
+ |     ____ AAGV020696513.1/3860-4003
+ |____|
+ |    |____ ABVD01163001.1/2639-2782
+_|
+ |     ____ ABRQ01212661.1/1623-1755
+ |    |
+ |    |          ____ ABRP01140986.1/7141-7283
+ |    |     ____|
+ |    |    |    |     ____ AAWR02015923.1/44161-44302
+ |____|    |    |____|
+      |    |         |     ____ ACBE01405412.1/1885-1746
+      |    |         |____|
+      |    |              |     ____ ABRR01116618.1/4084-4213
+      |    |              |____|
+      |____|                   |____ AAFC03086665.1/29304-29176
+           |
+           |     ____ ABRT010055860.1/534-679
+           |    |
+           |    |               ____ AACN010024863.1/308-165
+           |    |          ____|
+           |    |         |    |     ____ AAGW02033080.1/161454-161594
+           |____|         |    |____|
+                |         |         |     _____ ABDC01122126.1/2864-3008
+                |     ____|         |____|
+                |    |    |              |_____ AAQR03014003.1/17740-17619
+                |    |    |
+                |    |    |     ____ ABRO01019636.1/5159-5302
+                |____|    |____|
+                     |         |     ____ AL354709.15/38344-38487
+                     |         |____|
+                     |              |____ CT027658.2/21033-21173
+                     |
+                     |____ AAQQ01036565.1/346-486
+
+----------------------------------------------------------------------------------------------------
+                    Leaf Nodes: 18, Ancestor Nodes: 17, Sequence Length: 150
+----------------------------------------------------------------------------------------------------
+                                        Cost Matrix
+----------------------------------------------------------------------------------------------------
+                     	A	C	G	U	-
+                    A	0	2	1	2	2
+                    C	2	0	2	1	2
+                    G	1	2	0	2	2
+                    U	2	1	2	0	2
+                    -	2	2	2	2	0
+----------------------------------------------------------------------------------------------------
+                                        Ancestors
+----------------------------------------------------------------------------------------------------
+Ancestor                                 Left Child                               Right Child                             
+1                                        AAGV020696513.1/3860-4003                ABVD01163001.1/2639-2782                
+2                                        ABRR01116618.1/4084-4213                 AAFC03086665.1/29304-29176              
+3                                        ACBE01405412.1/1885-1746                 2                                       
+4                                        AAWR02015923.1/44161-44302               3                                       
+5                                        ABRP01140986.1/7141-7283                 4                                       
+6                                        ABDC01122126.1/2864-3008                 AAQR03014003.1/17740-17619              
+7                                        AAGW02033080.1/161454-161594             6                                       
+8                                        AACN010024863.1/308-165                  7                                       
+9                                        AL354709.15/38344-38487                  CT027658.2/21033-21173                  
+10                                       ABRO01019636.1/5159-5302                 9                                       
+11                                       8                                        10                                      
+12                                       11                                       AAQQ01036565.1/346-486                  
+13                                       ABRT010055860.1/534-679                  12                                      
+14                                       5                                        13                                      
+15                                       ABRQ01212661.1/1623-1755                 14                                      
+16                                       AANN01722443.1/605-459                   1                                       
+17                                       16                                       15                                      
+----------------------------------------------------------------------------------------------------
+                                        Leaf Nodes
+----------------------------------------------------------------------------------------------------
+Accession                      Sequence
+AACN010024863.1/308-165        UGUGCUGGGAACUGUAUAU-UCAUUACUUCAUUUUAAAGUGGAUUAAAAAGUGAG--GCAUACAGUUUUUUU-CUUCCUAGUUAGAU-GCU-UGAGAGCUCAAAGCCUUGCAGAGACCCCAUCACAGAAGAAUUGUCUUGGAGGAAGAGG
+AAFC03086665.1/29304-29176     GAUGAGAGGAAGAAUAG-CUUCAUUCU-------------GAAUCAAUGAAAAGA---CUUCUGUCUUCUUG-CCAGC-AGAUAUAU-GUUAUCUUCACUUAUAGAAUUGAAAGU-GUACCUCAAAGGAGCAUUCUCUUGGGAAGAAAGG
+AAGV020696513.1/3860-4003      GAUGAGAAGGAGAAUAAGCCUCAUUCUUGUUCAUAGUAAAGAAUCGAUGAAAAGA---CUUUUUACCUCUUG-CCACC-AGACAUGU-UUUAUCUGAGCUUAAAGAACUGGAAAACACACAUGAAAGAAGUGUUUCCCUGGAAGGAUGAA
+AAGW02033080.1/161454-161594   UUUCAUGAGAGGAAUAAGCCUCACUCUGAUUCAAAAGCAGGGUUCAAAGAAAAGA---UGUCUAU-UUCUUG-CCACC-AGCUACGU-GUUAUCUGUGCUUA--GAACUGGAAAGCACACAUCAGAAGAGCACCAGCGUGGAGAGACAGA
+AANN01722443.1/605-459         UAAUAAAAUAAAGAGAAACCUCAUUCUGGUUCCAUAGUAAAGAUCAAUGAAAUGACUUUUUUUUUCCUUUUUUCCACC-AGAUACGU-GCUAUCUGUGCUUUAAGAAUAAAAAAU-ACACAUCAAAGGAGAAUUUAUUUGGGAAGAAGGG
+AAQQ01036565.1/346-486         CUUGAUGUGA---AUUACCAUAAUUCUGACUCAAUGGCACAAAUCAAAGAGAAGA---CUCGUGUCUUCUUG-ACACC-AUAUAUAU-GCUAUGUGCACUCAAAGAAUUGAGAAGCACACAUCAGAAAACCAUUCCUUUGGAAAAAGAGG
+AAQR03014003.1/17740-17619     UGCAAUGAGAAGAAUGAGCCUCA----------------GAGAUCAAGUACAAGA---CUU--AUUUUCUUG-CCACC-AGAUACAU-GUUAUCCGUG---AGCUGACUGAAAAACAUACAUCAAAGGAAC-UUCCCUUGAAGAGAGAGG
+AAWR02015923.1/44161-44302     GAUGCGAAGAAGAAUAAAUGUCAUUCUGGUUCAAUGGUAGAGAUCACUGAUAAGA---CUUCUGUCUUCUUG-CCACC-AGAUACAC-UUUAUCUAAACCUAAACAAUUAAAGUG--CACAUCAAAGAAGUGUUCUCUUGGCAAGAGAGG
+ABDC01122126.1/2864-3008       UUGGAUGAGAAAAAUGAGCCUCAUUCUGCUUCAAUGGCAGAGAUCAAAUAAAAGA---CUUUUGUUUUUUUG-CCACC-AGAUAUGUUGUUAUCUGUGCUUACAGAACUGAAAAGCACACAUCAAAGGAGCAUUCCCUUGAAGAGACAGG
+ABRO01019636.1/5159-5302       UUUGAUGAGAAGAAUAAGCCUCGUUUUGAUUCAAUAGCAGAGAUCAAAGAAAAAG---CUUUUGUCUUCUGG-GCACC-AGAUAUAU-GUUAUCUGUGUUUAAAGAAAUGAAAAGCACACAUCAAAGAAGCAUUGGCUUGGAAAGAGAGG
+ABRP01140986.1/7141-7283       UUUGAUGAGAAGAAUAAACCUCAUUCUGUCUCAACUGUAGAGAUCAAUGAAAAGA---CUUCUGUCUUCUUG-CCACC-AGAUAUAU-GUUACCUGCACUUAAAGAAUUGAAAAC-ACGAAUCUAAGGAGUGUUCUCUUGGGAAGAGUAG
+ABRQ01212661.1/1623-1755       UUUGAGGAGA---ACACAUCGCACUCUGGUUCU-UAGUAGAGAUCAAUGACCAAA---UUCCUGUCCUUUUA-------AGGGA-AU-GUUAUCUGCAAUUAAAAAAUUGGAAAUGGCAAAUCAAAG-AGCAUUCCCUUGGAAGAAGGGA
+ABRR01116618.1/4084-4213       GAUGAGAAGAAGAAUAA-CUUCAUUCU-------------GAAUCAAUGAAAAGA---CUUCUGUCCUCUUG-CCAUU-GGAUAUAU-GUUAUCUGCACUUACAGAAUUGAAAUUUGUACAUCAAAGGAACAUUCUCUUGGGAAGAAAGA
+ABRT010055860.1/534-679        UUUGAUGAGAAAAAUAAGCCUCACUCUGGUUCAAUAGCAGAGAUAAAAGUAAAGAA-UUCUCUGUCUUCUUG-CCACC-AGAUACAU-AUUAUCUGCACUUAAAGAAUUGAAAAGCACUCAUGAAAGAAACAUUCCCUUGAAAAGAGAGG
+ABVD01163001.1/2639-2782       UUUGAUGAGGAGAAUAAACCUCAUUAUAGUUCA-UAGUAAAGAUCAAUGAAAAGA--CUUUUUCUCCUCUUA-CUAUC-AGACUUAU-GUUAUCUGAGCUUAAAGAACUGGAAAGCACACAUCAAAGGAGCAUUCCCAUGGAAGAAGAGG
+ACBE01405412.1/1885-1746       GAUGAGAAGAAGAAUAAACCUCAUUCUUGUUCAGAUGUAGAGAUCAAGGAAAAGA---CUUCUGUCUUAUUG-GCUUC-AGAUA--U-GUUAUCAGCACCUAAAGAAUGGAAAGC--UGCACUAAAGGAGGUUUCCCUUGGGAAGAGAGG
+AL354709.15/38344-38487        UUUGAUGAGAAGAAUAAGCCUCAUUCUGAUUCAACAGCAGAGAUCAAAGAAAAGA---CUUCUGUUUUCUGG-CCACC-AGAUAUAU-GUUAUCUGUGCUUAAAGAAUUGAAAAACACACAUCAAAGGAGAAUUUUCUUGGAAAGAGAGG
+CT027658.2/21033-21173         UUUGAUGAGA---AUAAGCCUCAUUCUGAUUCAACAGCAGAGAUCAAAGAAAAGA---UUUCUGUUUUCUGG-CCACC-AGAUAUAU-GUUAUCUGUGAUUAAAGAAUUGAAAAACACACAUCAAAGGAGCAUUCCCUUGGAAAGAGAGG
+----------------------------------------------------------------------------------------------------
+                                        Ancestor Nodes
+----------------------------------------------------------------------------------------------------
+Accession                      Sequence
+1                              GAUGAGAAGGAGAAUAAACCUCAUUAUAGUUCAUAAGAAAAAAUCAAUGAAAAGA--CCUUUUCACCUCUUA-CCACC-AGACAUAU-GUUAUCUGAGCUUAAAGAACUGGAAAACACACAUCAAAGAAGCAUUCCCAUGGAAGAAGAAA
+2                              GAUGAGAAGAAGAAUAA-CUUCAUUCU-------------GAAUCAAUGAAAAGA---CUUCUGUCCUCUUG-CCAGC-AGAUAUAU-GUUAUCUGCACUUACAGAAUUGAAAGUUGUACAUCAAAGGAACAUUCUCUUGGGAAGAAAGA
+3                              GAUGAGAAGAAGAAUAAACCUCAUUCUUGUUCAGAUGUAGAAAUCAAGGAAAAGA---CUUCUGUCUUAUUG-CCAUC-AGAUAUAU-GUUAUCAGCACCUAAAGAAUGGAAAGC-GUACACCAAAGGAGCAUUCCCUUGGGAAGAAAGG
+4                              GAUGAGAAGAAGAAUAAACCUCAUUCUGGUUCAAAGGUAGAGAUCAAUGAAAAGA---CUUCUGUCUUCUUG-CCACC-AGAUACAC-GUUAUCUAAACCUAAACAAUUAAAAGC--CACAUCAAAGAAGCAUUCUCUUGGCAAGAGAGG
+5                              GAUGAGAAGAAGAAUAAACCUCAUUCUGGCUCAACUGUAGAGAUCAAUGAAAAGA---CUUCUGUCUUCUUG-CCACC-AGAUAUAU-GUUACCUGCACCUAAAGAAUUGAAAAC-ACAAAUCAAAGGAGUGUUCUCUUGGGAAGAGAAG
+6                              UGCAAUGAGAAAAAUGAGCCUCAUUCUGCUUCAAUGGCAGAGAUCAAAUAAAAGA---CUUUUAUUUUCUUG-CCACC-AGAUACAUUGUUAUCCGUGCUUACAGAACUGAAAAACACACAUCAAAGGAACAUUCCCUUGAAGAGACAGG
+7                              UUCAAUGAGAAGAAUAAGCCUCACUCUGAUUCAAAAGCAGAGAUCAAAGAAAAGA---CGUCUAUUUUCUUG-CCACC-AGAUACGU-GUUAUCUGUGCUUACAGAACUGAAAAGCACACAUCAAAAGAGCACCACCGUGAAGAGACAGA
+8                              UGUGAUGAGAACAAUAAACCUCAUUACGCCACAAUAAAAGGGAUCAAAAAAAAAA--GCAUACAGUUUCUUG-CCACCUAGCUACAU-GCUAUCAGAGCUCAAAGAACUGAAAAGAACACAUCAAAGAAGAAUUACCUUGGAGAAACAGG
+9                              UUUGAUGAGAAGAAUAAGCCUCAUUCUGAUUCAACAGCAGAGAUCAAAGAAAAGA---CUUCUGUUUUCUGG-CCACC-AGAUAUAU-GUUAUCUGUGAUUAAAGAAUUGAAAAACACACAUCAAAGGAGAAUUCCCUUGGAAAGAGAGG
+10                             UUUGAUGAGAAGAAUAAGCCUCAUUCUGAUUCAACAGCAGAGAUCAAAGAAAAAA---CUUCUGUCUUCUGG-CCACC-AGAUAUAU-GUUAUCUGUGCUUAAAGAAAUGAAAAACACACAUCAAAGAAGCAUUCCCUUGGAAAGAGAGG
+11                             UUUGAUGAGAAGAAUAAGCCUCAUUCUGAUUCAAUAGCAGAGAUCAAAGAAAAAA---CUUCUAUUUUCUGG-CCACC-AGAUACAU-GUUAUCUGUGCUUAAAGAAUUGAAAAGCACACAUCAAAGAAGCAUUGCCUUGGAAAGAGAGG
+12                             CUUGAUGAGAAGAAUAACCAUAAUUCUGACUCAAUAGCACAAAUCAAAGAAAAGA---CUCCUGUCUUCUUG-ACACC-AGAUAUAU-GCUAUCUGCACUCAAAGAAUUGAAAAGCACACAUCAAAAAACCAUUCCCUUGGAAAAAGAGG
+13                             UUUGAUGAGAAAAAUAAGCCUCACUCUGAUUCAAUAGCAGAGAUAAAAGAAAAGAA-UCCUCUGUCUUCUUG-CCACC-AGAUACAU-AUUAUCUGCACUUAAAGAAUUGAAAAGCACACAUCAAAGAAACAUUCCCUUGAAAAGAGAGG
+14                             UUUGAUGAGAAGAAUAAACCUCAUUCUGGUUCAAUAGCAGAGAUCAAAGAAAAGA---CUUCUGUCUUCUUG-CCACC-AGAUAUAU-GUUAUCUGCACUUAAAGAAUUGAAAACCACACAUCAAAGAAGCAUUCCCUUGGAAAGAGAGG
+15                             UUUGAGGAGAAGAACAAACCGCACUCUGGUUCAAUAGUAGAGAUCAAUGAAAAAA---CUCCUGUCCUCUUA-CCACC-AGAGAUAU-GUUAUCUGCAAUUAAAAAAUUGAAAACCACAAAUCAAAGAAGCAUUCCCUUGGAAAAAGAGA
+16                             UAAGAAAAGAAAAAGAAACCUCAUUCUAGUUCAAUAGUAAAGAUCAAUGAAAAGACUCUUUUUUUCCUCUUAUCCACC-AGACACGU-GCUAUCUGAGCUUAAAGAACAAAAAAACACACAUCAAAGGAGAAUUUACCUGGAAAGAAGGG
+17                             UAUGAGAAGAAGAAUAAACCUCAUUCUGGUUCAAUAGUAAAGAUCAAUGAAAAGA---UUUCUGUCCUCUUA-CCACC-AGAUAUAU-GUUAUCUGCACUUAAAGAAUUGAAAAUCACACAUCAAAGGAGCAUUCCCUUGGAAAGAGGGG
+----------------------------------------------------------------------------------------------------
+                                        Secondary Structures
+----------------------------------------------------------------------------------------------------
+Accession                      Sequence
+1                              GAUGAGAAGGAGAAUAAACCUCAUUAUAGUUCAUAAGAAAAAAUCAAUGAAAAGA--CCUUUUCACCUCUUA-CCACC-AGACAUAU-GUUAUCUGAGCUUAAAGAACUGGAAAACACACAUCAAAGAAGCAUUCCCAUGGAAGAAGAAA
+Dist: 120                      ((((((.............)))))).((((((.((((..........(((((((....))))))).(((..........................)))))))..))))))......................((((...)))).......
+2                              GAUGAGAAGAAGAAUAA-CUUCAUUCU-------------GAAUCAAUGAAAAGA---CUUCUGUCCUCUUG-CCAGC-AGAUAUAU-GUUAUCUGCACUUACAGAAUUGAAAGUUGUACAUCAAAGGAACAUUCUCUUGGGAAGAAAGA
+Dist: 136                      ....((((((((......)))).))))................................((((.(((.........((.(((((......)))))))((((.((....)).)))).......(((.(((....))).))))))))))...
+3                              GAUGAGAAGAAGAAUAAACCUCAUUCUUGUUCAGAUGUAGAAAUCAAGGAAAAGA---CUUCUGUCUUAUUG-CCAUC-AGAUAUAU-GUUAUCAGCACCUAAAGAAUGGAAAGC-GUACACCAAAGGAGCAUUCCCUUGGGAAGAAAGG
+Dist: 152                      ((((((((((((.......((..(((((((((.......)))..))))))..))....))))).))))))).........((((......)))).((.((........))...))......((((.(((....))).)))).........
+4                              GAUGAGAAGAAGAAUAAACCUCAUUCUGGUUCAAAGGUAGAGAUCAAUGAAAAGA---CUUCUGUCUUCUUG-CCACC-AGAUACAC-GUUAUCUAAACCUAAACAAUUAAAAGC--CACAUCAAAGAAGCAUUCUCUUGGCAAGAGAGG
+Dist: 132                      ((((.(((..(((((.......)))))..)))...((..((((.....(((........))).....))))..))....(((((......)))))........................)))).........(((((((...))))))).
+5                              GAUGAGAAGAAGAAUAAACCUCAUUCUGGCUCAACUGUAGAGAUCAAUGAAAAGA---CUUCUGUCUUCUUG-CCACC-AGAUAUAU-GUUACCUGCACCUAAAGAAUUGAAAAC-ACAAAUCAAAGGAGUGUUCUCUUGGGAAGAGAAG
+Dist: 152                      ...(((((((((((......((((..((((((.......))).))))))).........)))).)))))))........................((((((...((.(((.......))).))...)).))))((((((...))))))..
+6                              UGCAAUGAGAAAAAUGAGCCUCAUUCUGCUUCAAUGGCAGAGAUCAAAUAAAAGA---CUUUUAUUUUCUUG-CCACC-AGAUACAUUGUUAUCCGUGCUUACAGAACUGAAAAACACACAUCAAAGGAACAUUCCCUUGAAGAGACAGG
+Dist: 168                      ...((((((..........))))))(((.(((..(((..((((..(((((((((....)))))))))))))..)))....((((......)))).(((.................)))...((((.(((....))).)))).))).))).
+7                              UUCAAUGAGAAGAAUAAGCCUCACUCUGAUUCAAAAGCAGAGAUCAAAGAAAAGA---CGUCUAUUUUCUUG-CCACC-AGAUACGU-GUUAUCUGUGCUUACAGAACUGAAAAGCACACAUCAAAAGAGCACCACCGUGAAGAGACAGA
+Dist: 124                      ...................(((.(((((.........)))))....(((((((...........)))))))........(((((......)))))((((((.((....))..))))))............(((....)))..))).....
+8                              UGUGAUGAGAACAAUAAACCUCAUUACGCCACAAUAAAAGGGAUCAAAAAAAAAA--GCAUACAGUUUCUUG-CCACCUAGCUACAU-GCUAUCAGAGCUCAAAGAACUGAAAAGAACACAUCAAAGAAGAAUUACCUUGGAGAAACAGG
+Dist: 112                      .((((((((..........)))))))).....................................(((((((.......((((......))))((((..((...))..))))................(((......))).)))))))...
+9                              UUUGAUGAGAAGAAUAAGCCUCAUUCUGAUUCAACAGCAGAGAUCAAAGAAAAGA---CUUCUGUUUUCUGG-CCACC-AGAUAUAU-GUUAUCUGUGAUUAAAGAAUUGAAAAACACACAUCAAAGGAGAAUUCCCUUGGAAAGAGAGG
+Dist: 140                      ....(((((..........)))))(((..(((.....((((((....((((........))))..))))))...(((..(((((......))))))))........................(((.(((....))).))))))..)))..
+10                             UUUGAUGAGAAGAAUAAGCCUCAUUCUGAUUCAACAGCAGAGAUCAAAGAAAAAA---CUUCUGUCUUCUGG-CCACC-AGAUAUAU-GUUAUCUGUGCUUAAAGAAAUGAAAAACACACAUCAAAGAAGCAUUCCCUUGGAAAGAGAGG
+Dist: 168                      .(((.((((.(((((.......)))))..)))).)))(((((((...((((........))))))).))))........(((((......)))))((((((...((..((.......))..))....))))))..((((.......))))
+11                             UUUGAUGAGAAGAAUAAGCCUCAUUCUGAUUCAAUAGCAGAGAUCAAAGAAAAAA---CUUCUAUUUUCUGG-CCACC-AGAUACAU-GUUAUCUGUGCUUAAAGAAUUGAAAAGCACACAUCAAAGAAGCAUUGCCUUGGAAAGAGAGG
+Dist: 148                      (((((((...(((((.......)))))..........((((((....((((........))))..))))))........(((((......)))))((((((...........)))))).))))))).........((((.......))))
+12                             CUUGAUGAGAAGAAUAACCAUAAUUCUGACUCAAUAGCACAAAUCAAAGAAAAGA---CUCCUGUCUUCUUG-ACACC-AGAUAUAU-GCUAUCUGCACUCAAAGAAUUGAAAAGCACACAUCAAAAAACCAUUCCCUUGGAAAAAGAGG
+Dist: 116                      .....((((.(((((.......)))))..))))................................((((((........(((((......)))))((..((((....))))...)).............(((......)))...))))))
+13                             UUUGAUGAGAAAAAUAAGCCUCACUCUGAUUCAAUAGCAGAGAUAAAAGAAAAGAA-UCCUCUGUCUUCUUG-CCACC-AGAUACAU-AUUAUCUGCACUUAAAGAAUUGAAAAGCACACAUCAAAGAAACAUUCCCUUGAAAAGAGAGG
+Dist: 132                      .....((((..........))))((((..(((((..((((((.................)))))).(((((........(((((......))))).......)))))((((..........))))............))))).))))...
+14                             UUUGAUGAGAAGAAUAAACCUCAUUCUGGUUCAAUAGCAGAGAUCAAAGAAAAGA---CUUCUGUCUUCUUG-CCACC-AGAUAUAU-GUUAUCUGCACUUAAAGAAUUGAAAACCACACAUCAAAGAAGCAUUCCCUUGGAAAGAGAGG
+Dist: 156                      (((((((...(((((.......)))))((((((((.((((((.................))))))..((((........(((((......))))).......)))))))))..)))...))))))).........((((.......))))
+15                             UUUGAGGAGAAGAACAAACCGCACUCUGGUUCAAUAGUAGAGAUCAAUGAAAAAA---CUCCUGUCCUCUUA-CCACC-AGAGAUAU-GUUAUCUGCAAUUAAAAAAUUGAAAACCACAAAUCAAAGAAGCAUUCCCUUGGAAAAAGAGA
+Dist: 120                      ....(((((..............(((((.(.....).)))))................)))))...(((((..........(((((....))))).(((((....)))))......................((((...)))).))))).
+16                             UAAGAAAAGAAAAAGAAACCUCAUUCUAGUUCAAUAGUAAAGAUCAAUGAAAAGACUCUUUUUUUCCUCUUAUCCACC-AGACACGU-GCUAUCUGAGCUUAAAGAACAAAAAAACACACAUCAAAGGAGAAUUUACCUGGAAAGAAGGG
+Dist: 92                       ........(((..((((......))))..))).........................((((((((((.....................(((.....)))..........................(((........))))))))))))).
+17                             UAUGAGAAGAAGAAUAAACCUCAUUCUGGUUCAAUAGUAAAGAUCAAUGAAAAGA---UUUCUGUCCUCUUA-CCACC-AGAUAUAU-GUUAUCUGCACUUAAAGAAUUGAAAAUCACACAUCAAAGGAGCAUUCCCUUGGAAAGAGGGG
+Dist: 136                      .....(((..(((((.......)))))..)))................((((......))))..(((((((..(((...(((((......)))))............((((..........)))).(((....)))..))).))))))).
+----------------------------------------------------------------------------------------------------
