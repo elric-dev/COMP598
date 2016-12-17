@@ -2,8 +2,7 @@
 @uthor: Haji Mohammad Saleem
 Date  : December 9, 2016
 
-Objective 2-5
-Objective 6,7 also implemented in getAncestorSeq_extended
+Objective 8
 
 Implementation of the Sankoff Algorithm.
 Regular: penalties -1 intra group and -2 inter group.
@@ -19,7 +18,6 @@ from cStringIO import StringIO
 from stockholm_parser import Stockholm
 from pprint import pprint
 import viennaRNAwrap as vwrap
-import argparse
 
 DATA_PATH = paths.data_path
 SEED_PATH = os.path.join(DATA_PATH, 'seed')
@@ -43,15 +41,10 @@ def hline():
 
 class Sankoff:
 
-    def __init__(self, family, stk, extended):
+    def __init__(self, family, stk):
         '''
         Initialise the Sankoff Class
         '''
-        if extended:
-            heading('Sankoff Analysis for %s Family with base pair conservation.' % family)
-        else:
-            heading('Sankoff Analysis for %s Family.' % family)
-        hline()
         self.family = family
         self.neuclicAcids = ['A', 'C', 'G', 'U']
         self.costMatrix = [[0, 2, 1, 2], [
@@ -365,11 +358,27 @@ class Sankoff:
         consDist = {}
         ss_cons = self.SS_cons
 
+        seqLen = len(ss_cons)
+        seedid = self.family
+        ancesCount = len(self.ancestorSeq.keys())
+        distsum = 0
+        GCcont = 0
+        freqcont = 0.
+
         for key in sorted(self.ancestorSeq.keys()):
             a, b = vwrap.runRNAFold(self.ancestorSeq[key])
             c = vwrap.runRNADistance(ss_cons, a)
+            d = vwrap.mfeRNAFold(self.ancestorSeq[key])
             secStructure[key] = a
             consDist[key] = c
+            distsum += int(c)
+            freqcont += d
+            temp_seq = self.ancestorSeq[key]
+            for char in temp_seq:
+                if char == "G" or char == "C":
+                    GCcont+=1
+        print '{:20}{:20}{:20}{:20}{:20}{:20}'.format(seedid, str(ancesCount), str(seqLen), str(distsum), str(GCcont), str(freqcont))
+        #print '%s\t%s\t%s\t%s\t%s\t%s'%(seedid, ancesCount, seqLen, distsum, GCcont, freqcont)
         self.secStructure = secStructure
         self.consDist = consDist
         return
@@ -383,44 +392,29 @@ class Sankoff:
             print "Dist: {:24} {}".format(self.consDist[key], self.secStructure[key])
         hline()
 
-if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description='Implementation of the Sankoff Algorithm')
-    parser.add_argument('-r','--rfam', help='RNA family id', required=True)
-    parser.add_argument('-p','--printit', help='Print additional information', action='store_true')
-    parser.add_argument('-e','--extended', help='Use Sankoff with base pair preservation', action='store_true')
-    args = parser.parse_args()
-
-    seedFamily = args.rfam
-
+def main(seedFamily):
     # Read and parse the Stockholm file
     stk = Stockholm(seedFamily)
     stk.parse()
 
     # Parse the phylogeny tree and run Sankoff algorithm
-    skf = Sankoff(seedFamily, stk, args.extended)
+    skf = Sankoff(seedFamily, stk)
     skf.updateSSCONS()
     skf.includeGaps()
     skf.readTree()
     skf.getSSinfo()
     skf.getAncestorWeight()
-    if args.extended:
-        skf.getAncestorSeq_extended()
-    else:
-        skf.getAncestorSeq()
+    skf.getAncestorSeq_extended()
+    #skf.getAncestorSeq()
     skf.getSecondaryStruct()
+    return
 
-    if args.printit:
-        # Draw the ascii version of the tree
-        skf.drawTree()
-        # Get the family stats
-        skf.familyStats()
-        # Print the cost matrix used in the analysis
-        skf.printCostMat()
-        # Print the anecstor for each children pair
-        skf.printAncestors()
-        # Print the sequence for leaf nodes
-        skf.printLeafSeq()
-        # Print the sequence for ancestor nodes
-        skf.printAncsSeq()
-    # Print the secondary structure
-    skf.printSecondaryStruct()
+
+if __name__ == "__main__":
+    seeds = os.listdir(SEED_PATH)
+    seeds = [x.split('.')[0] for x in seeds]
+
+    
+    print '{:20}{:20}{:20}{:20}{:20}{:20}'.format('RNA family', '# of Ancestors', 'Sequence Length', 'RNA Distance', 'GC content', 'MFE freq')
+    for seed in seeds:
+        main(seed)
